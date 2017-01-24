@@ -104,11 +104,9 @@ a {
 
 .logo {
     display: inline-block;
+	vertical-align: middle;
     background: url(img/logo.png);
     background-repeat: no-repeat;
     width: 278px;
     height: 45px;
-    position: absolute;
-    left: 0px;
-    top: 58px;
 }
