@@ -9,7 +9,6 @@
   font-style: normal;
 }
 
-
 * {
     box-sizing: border-box
 }
@@ -107,6 +106,11 @@ a {
 	vertical-align: middle;
     background: url(img/logo.png);
     background-repeat: no-repeat;
-    width: 278px;
-    height: 45px;
+    width: 249px;
+    height: 41px;
+}
+
+.phonenumber {
+    display: inline-block;
+    font-family: 'GothamProMedium';
 }
