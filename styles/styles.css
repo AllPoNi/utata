@@ -9,18 +9,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GothamProMedium';
+  src: url('fonts/GothamProMedium/GothamProMedium.eot');
+  src: url('fonts/GothamProMedium/GothamProMedium.woff') format('woff'),
+       url('fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+mark {
+    color: #2ea939;
+    font-family: 'GothamProMedium';
+    background: none;
 }
 
 body {
     margin: 0;
-    color: #383431;
+    color: inherit;
     font-family: 'Gothampro';
 }
 
 a {
-    color: #383431;
+    color: inherit;
     text-decoration: inherit;
 }
 
@@ -46,8 +62,13 @@ a {
     width: 100%;
 }
 
-.header-top {
-    
+.header-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-middle {
+    font-size: 0;
 }
 
 .menu {
@@ -56,7 +77,7 @@ a {
     vertical-align: middle;
     text-align: justify;
     font-size: 0;
-    
+    color: #383431;
 }
 
 .menu:after {
@@ -73,13 +94,18 @@ a {
     line-height: 34px;
 }
 
+.menu a:hover {
+    color: #2ea939;
+}
+
 .time {
     display: inline-block;
     vertical-align: middle;
-    padding: 0 0 0 116px;
+    padding: 0 0 0 43px;
     position: relative;
     font-size: 12px;
     color: #d6d3d3;
+    width: 221px;
 }
 
 .time span {
@@ -88,15 +114,13 @@ a {
 
 .time:before {
     content: '';
-    display: inline-block;
     background: url(img/ico1.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: inline-block;
     width: 19px;
     height: 19px;
     transform: translateY(-50%);
     position: absolute;
-    left: 60px;
+    left: 0px;
     top: 50%;
 
 }
@@ -107,10 +131,113 @@ a {
     background: url(img/logo.png);
     background-repeat: no-repeat;
     width: 249px;
-    height: 41px;
+    height: 40px;
+    margin: 0 67px 0 0;
 }
 
-.phonenumber {
+.logo img {
+    max-width: 100%;
+}
+
+.phone {
     display: inline-block;
-    font-family: 'GothamProMedium';
+    vertical-align: middle;
+}
+
+.phone a {
+    display:inline-block;
+    font-size: 18px;
+    margin-right: 28px;
+}
+
+.phone a:last-of-type {
+    margin-right: 0;
+}
+
+.phone a:hover {
+    color: #2ea939;
+}
+
+.phone span {
+    margin: 0 0 0 4px; /* Отступ слева фразы "звонок бесплатный" от номера */
+    font-size: 12px;
+    color: #a8a8a8;
+    text-transform: uppercase;
+}
+
+.header-info {
+    display: inline-block;
+    vertical-align: middle;
+    height: 99px;
+    color: #2fae3b;
+    font-size: 15px;
+    padding: 19px 0 0;
+    width: 221px;
+}
+
+.header-info a {
+    
+}
+
+.header-info__city {
+    display: inline-block;
+    text-decoration: underline;
+    position: relative;
+    margin: 0 0 22px;
+    padding: 0 20px 0 45px;
+}
+
+.header-info__city:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(img/city.png) no-repeat;
+    width: 12px;
+    height: 18px;
+}
+
+.header-info__account {
+    position: relative;
+    display: block;
+    padding: 0 0 0 45px;
+}
+
+.header-info__account:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(img/account.png) no-repeat;
+    height: 22px;
+    width: 22px;
+}
+
+.header-info__city:after {
+    transform: rotate(45deg);
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid #87c841;
+    border-right: 2px solid #87c841;
+    right: 0;
+    bottom: 6px;
+}
+
+.header-info__city:hover {
+    color: black;
+}
+
+.header-info__account:hover {
+    color: black;
+}
+
+.header-info__city:hover:after {
+    border-color: black;
 }
