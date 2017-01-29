@@ -18,6 +18,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'GothamProBold';
+  src: url('fonts/GothamProBold/GothamProBold.eot');
+  src: url('fonts/GothamProBold/GothamProBold.woff') format('woff'),
+       url('fonts/GothamProBold/GothamProBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     transition: .4s;
@@ -32,7 +41,7 @@ mark {
 body {
     margin: 0;
     color: inherit;
-    font-family: 'Gothampro';
+    font-family: 'GothamPro';
 }
 
 a {
@@ -240,4 +249,45 @@ a {
 
 .header-info__city:hover:after {
     border-color: black;
+}
+
+.search {
+    background: #2fae3b;
+    height: 48px;
+}
+
+.circle {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+	width: 27px;
+	height: 27px;
+	border-radius: 27px;
+    border: 3px solid #86c840;
+    
+}
+
+.circle:before {
+    transform: rotate(45deg);
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-bottom: 3px solid #86c840;
+    border-right: 3px solid #86c840;
+    right: 5px;
+    bottom: 7px;
+}
+
+.catalog {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-family: 'GothamProBold';
+    color: #ffffff;
+    font-size: 24px;
+    width: 98px;
+    height: inherit;
+    text-align: center;
+    line-height: 0px;
 }
