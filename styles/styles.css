@@ -56,8 +56,7 @@ a {
 
 .container {
     width: 1200px;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 .justify {
@@ -251,7 +250,7 @@ a {
     border-color: black;
 }
 
-.search {
+.search-line {
     background: #2fae3b;
     height: 48px;
 }
@@ -264,7 +263,6 @@ a {
 	height: 27px;
 	border-radius: 27px;
     border: 3px solid #86c840;
-    
 }
 
 .circle:before {
