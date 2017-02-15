@@ -1,30 +1,25 @@
 @font-face {
-  font-family: 'GothamPro';
-  src: url('fonts/Gothampro/GothamPro.eot');
-  src: url('fonts/Gothampro/GothamPro.woff2') format('woff2'),
-       url('fonts/Gothampro/GothamPro.woff') format('woff'),
-       url('fonts/Gothampro/GothamPro.ttf') format('truetype'),
-       url('fonts/Gothampro/GothamPro.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GothamPro';
+    src: url('fonts/Gothampro/GothamPro.eot');
+    src: url('fonts/Gothampro/GothamPro.woff2') format('woff2'), url('fonts/Gothampro/GothamPro.woff') format('woff'), url('fonts/Gothampro/GothamPro.ttf') format('truetype'), url('fonts/Gothampro/GothamPro.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'GothamProMedium';
-  src: url('fonts/GothamProMedium/GothamProMedium.eot');
-  src: url('fonts/GothamProMedium/GothamProMedium.woff') format('woff'),
-       url('fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GothamProMedium';
+    src: url('fonts/GothamProMedium/GothamProMedium.eot');
+    src: url('fonts/GothamProMedium/GothamProMedium.woff') format('woff'), url('fonts/GothamProMedium/GothamProMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'GothamProBold';
-  src: url('fonts/GothamProBold/GothamProBold.eot');
-  src: url('fonts/GothamProBold/GothamProBold.woff') format('woff'),
-       url('fonts/GothamProBold/GothamProBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'GothamProBold';
+    src: url('fonts/GothamProBold/GothamProBold.eot');
+    src: url('fonts/GothamProBold/GothamProBold.woff') format('woff'), url('fonts/GothamProBold/GothamProBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -56,7 +51,7 @@ a {
 
 .container {
     width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .justify {
@@ -91,7 +86,7 @@ a {
 .menu:after {
     content: '';
     display: inline-block;
-    width: 100%; 
+    width: 100%;
 }
 
 .menu a {
@@ -130,12 +125,11 @@ a {
     position: absolute;
     left: 0px;
     top: 50%;
-
 }
 
 .logo {
     display: inline-block;
-	vertical-align: middle;
+    vertical-align: middle;
     background: url(img/logo.png);
     background-repeat: no-repeat;
     width: 249px;
@@ -153,7 +147,7 @@ a {
 }
 
 .phone a {
-    display:inline-block;
+    display: inline-block;
     font-size: 18px;
     margin-right: 28px;
 }
@@ -167,7 +161,8 @@ a {
 }
 
 .phone span {
-    margin: 0 0 0 4px; /* Отступ слева фразы "звонок бесплатный" от номера */
+    margin: 0 0 0 4px;
+    /* Отступ слева фразы "звонок бесплатный" от номера */
     font-size: 12px;
     color: #a8a8a8;
     text-transform: uppercase;
@@ -183,9 +178,7 @@ a {
     width: 221px;
 }
 
-.header-info a {
-    
-}
+.header-info a {}
 
 .header-info__city {
     display: inline-block;
@@ -251,21 +244,38 @@ a {
 }
 
 .search-line {
-    background: #2fae3b;
+    background: linear-gradient(to right, #2fae3b,  #2fae3b 50%, #2a2d34 50%);
     height: 48px;
 }
 
-.circle {
+.catalog {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 0 40px;
+    position: relative;
+    font-family: 'GothamProBold';
+    color: #ffffff;
+    font-size: 24px;
+    height: inherit;
+    text-align: center;
+    line-height: 1;
+    margin-right: 33px;
+}
+
+.catalog:after {
+    content: '';
     vertical-align: middle;
     display: inline-block;
-    position: relative;
-	width: 27px;
-	height: 27px;
-	border-radius: 27px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
     border: 3px solid #86c840;
 }
 
-.circle:before {
+.catalog:before {
     transform: rotate(45deg);
     content: '';
     position: absolute;
@@ -273,19 +283,60 @@ a {
     height: 8px;
     border-bottom: 3px solid #86c840;
     border-right: 3px solid #86c840;
-    right: 5px;
-    bottom: 7px;
+    left: 11px;
+    top: 2px;
 }
 
-.catalog {
+.question {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 33px;
+  text-decoration: underline;
+}
+
+.question:hover {
+  text-decoration: none;
+}
+
+.search {
+  height: 48px;
+  line-height: 48px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.search__input {
+    width: 450px;
+    border: none;
+    color: #2a2d34;
+    font-size: 15px;
+    height: 33px;
     display: inline-block;
     vertical-align: middle;
-    position: relative;
-    font-family: 'GothamProBold';
-    color: #ffffff;
-    font-size: 24px;
-    width: 98px;
-    height: inherit;
-    text-align: center;
-    line-height: 0px;
+    padding: 0 15px;
+}
+
+.search__btn {
+  width: 33px;
+  height: 33px;
+  background-color: #2a2d34;
+  background-image: url(img/ico2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.search__btn:hover {
+  background-color: #d6d3d3;
+}
+
+.btn-ico {
+  display: inline-block;
+  vertical-align: middle;
 }
